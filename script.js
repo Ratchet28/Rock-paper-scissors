@@ -24,33 +24,27 @@ function playRound(playerSelect,computerSelection) {
         return "You tied"
 
     } else if (playerSelect == "rock" && computerSelection == "scissors") {
-        //userScore++;
         return "You won! Rock beats Scissors";
 
-    } else if (playerSelect == "rock" && computerSelection == "paper"){
-        //compScore++; 
+    } else if (playerSelect == "rock" && computerSelection == "paper"){ 
         return "You lost! Paper beats rock";
 
     } else if (playerSelect == "scissors" && computerSelection == "paper") {
-        //userScore++;
         return "You Won! Scissors beats Paper";
 
     }else if (playerSelect == "scissors" &&  computerSelection == "rock") {
-        //compScore++
         return "You lost! Rock beat scissors";
 
     }else if (playerSelect == "paper" && computerSelection == "rock") {
-        //userScore++;
         return "You won! Paper beats Rock";
 
     }else (playerSelect == "paper" && computerSelection == "scissors") ;{
-        //compScore++;
         return "You Lost! Scissors beats Paper";
     }
 
 }
 
-//console.log(playRound(playerSelect,computerSelection));
+console.log(playRound(playerSelect,computerSelection));
 
 // Game function plays 5 round and keeps score to report winner or looser at end
 // If player wins give point to player else give point to computer
@@ -63,6 +57,8 @@ function game() {
     for(let i = 0; i < 5; i++) {
         playRound(playerSelect,computerSelection);
         console.log(playRound(playerSelect,computerSelection));
+        
     }
 }
 
+console.log(game());
